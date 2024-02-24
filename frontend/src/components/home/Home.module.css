@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    max-width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.homeIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.bookmyshoot {
+    position: absolute;
+    top: 340px;
+    left: 779.2px;
+    font-size: 102.4px;
+    font-family: Pacifico;
+   
+}
+.memorableEventsDont1 {
+    position: absolute;
+    top: 515px;
+    left: 524.8px;
+
+}
+.haventSignUp1 {
+    position: absolute;
+    top: 550px;
+    left: 532.8px;
+    -webkit-text-stroke: 0.8px #143642;
+}
+.homeChild {
+    position: absolute;
+    top: 673.6px;
+    left: 910.4px;
+    border-radius: 8px;
+    background-color: #393833;
+    width: 80.8px;
+    height: 32.8px;
+}
+.signUp a {
+    position: absolute;
+    top: 600px;
+    left: 916px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4864F4;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signUp a:hover {
+    background-color: #fff;
+    color: #4864F4; 
+  }
+.home {
+    position: relative;
+    box-shadow: 0px 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 28.8px;
+    color: #fff;
+    font-family: 'Josefin Sans';
+}
+

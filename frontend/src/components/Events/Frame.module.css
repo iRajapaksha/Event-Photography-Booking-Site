@@ -1,0 +1,48 @@
+
+   .eventsPage { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .eventCardsContainer {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    max-width: 800px; 
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center;
+  }
+  
+  .eventCard {
+    text-align: center;
+  }
+  
+  .imageContainer img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    margin: 5px; 
+  }
+  
+  .arrowButton {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .arrowButton:hover {
+    background: #0056b3;
+  }
+  

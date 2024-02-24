@@ -1,0 +1,94 @@
+
+
+ .addEventParent {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px; 
+    border: 2px solid #020e80;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 120px auto;
+    height: 60vh;   
+  }
+  
+  .addEvent {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .eventName {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    
+  }
+  
+  .addSamples {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .frameChild,
+  .frameInnerLabel,
+  .frameItemLabel,
+  .rectangleDivLabel,
+  .frameChild1Label {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .done {
+    margin: 20px 30px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .done:hover {
+    background: #0056b3;
+  }
+  
+  input[type='file'] {
+    display: none;
+  }
+  .frameItemLabel{
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .frameItemLabel:hover{
+    background: #0056b3;
+  }
+  input[type='file'] + label {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type='file'] + label:hover {
+    background: #0056b3;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  

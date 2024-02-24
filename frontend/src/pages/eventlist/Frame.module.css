@@ -1,0 +1,82 @@
+.eventsParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    border: 2px solid #020e80;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 120px auto;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .events {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .eventList {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .frameChild {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .frameChild li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .frameChild li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selectedEvent {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .frameItem {
+    margin: 20px 0;
+  }
+  
+  frameInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .delete {
+    text-align: center;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background: #cc0000;
+  }
+  

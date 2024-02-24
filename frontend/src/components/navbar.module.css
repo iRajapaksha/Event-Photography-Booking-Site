@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap');
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.navbar {
+  position: relative;
+  background: linear-gradient(135deg, #030909, #020e80);
+  box-shadow: 0 3.2px 3.2px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 64px;
+  text-align: center; 
+  font-size: 25.6px;
+  color: #fff;
+  font-family: 'Josefin Sans';
+  display: flex;
+  align-items: center; 
+  justify-content: left ; 
+}
+
+
+.navbarChild {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 20px; 
+}
+
+.bookmyshoot {
+ font-family: Pacifico;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 200px;
+  fill: #fff;
+}
+
+.about a,
+.contact a,
+.services a,
+.home a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  padding: 0 50px;
+  
+}
+
+.about a:hover,
+.contact a:hover,
+.services a:hover,
+.home a:hover {
+    color: #4864F4; 
+}
+
+.span {
+  color: #000;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4864F4;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .login a:hover {
+    background-color: #fff;
+    color: #4864F4; 
+  }
+
+
+
+  
+
+
