@@ -3,6 +3,9 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
   }
   
 img {
@@ -22,7 +25,7 @@ img {
   
 .bookmyshoot {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 779.2px;
     font-size: 102.4px;
     font-family: Pacifico;
@@ -30,19 +33,19 @@ img {
 }
 .memorableEventsDont1 {
     position: absolute;
-    top: 515px;
+    top: 450px;
     left: 524.8px;
 
 }
 .haventSignUp1 {
     position: absolute;
-    top: 550px;
+    top: 490px;
     left: 532.8px;
     -webkit-text-stroke: 0.8px #143642;
 }
 .homeChild {
     position: absolute;
-    top: 673.6px;
+    top: 650px;
     left: 910.4px;
     border-radius: 8px;
     background-color: #393833;
@@ -51,7 +54,7 @@ img {
 }
 .signUp a {
     position: absolute;
-    top: 600px;
+    top: 550px;
     left: 916px;
     text-decoration: none;
     color: #fff;
