@@ -1,39 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
-.span {
-    font-family: Inter;
-}
-.about1 {
-    position: absolute;
-    top: 27.2px;
-    left: 728px;
-}
-.welcomeToBookmyshoot {
-    margin-block-start: 0;
-    margin-block-end: 4px;
-}
-.atBookmyshootWere {
-    margin: 0;
-}
-.welcomeToBookmyshootContainer {
-    position: absolute;
-    top: 80.8px;
-    left: calc(50% - 571.2px);
-    text-align: center;
-    display: inline-block;
-    width: 1142.4px;
-    height: 313.6px;
-}
-.about {
-    position: relative; 
-    width: 100%;
-    height: 284.8px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 28.8px;
-    color: #000000;
-    font-family: 'Josefin Sans';
-
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro {
+  font-size: 1.2em;
+  font-family: 'Inter', sans-serif;
+  color: #666;
+}
+
+.description {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  color: #666;
+}

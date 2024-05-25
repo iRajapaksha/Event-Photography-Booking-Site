@@ -21,17 +21,15 @@ const AddEvent = () => {
       });
   }, [email]);
 
-  const handleImageChange = (e, imageIdentifier) => {
+  const handleImageChange = (e, index) => {
     const newImage = e.target.files[0];
-
     const updatedImages = [...images];
-    updatedImages[imageIdentifier - 1] = newImage;
+    updatedImages[index] = newImage;
     setImages(updatedImages);
   };
 
   const sendData = (e) => {
     e.preventDefault();
-
     const formData = new FormData();
     formData.append('event_name', event);
     formData.append('first_name', userData.first_name);
@@ -41,9 +39,11 @@ const AddEvent = () => {
     formData.append('email', userData.email);
     formData.append('years_of_experience', userData.years_of_experience);
 
-    for (let i = 0; i < images.length; i++) {
-      formData.append('images', images[i]);
-    }
+    images.forEach((image, index) => {
+      if (image) {
+        formData.append(`images`, image);
+      }
+    });
 
     axios
       .post('http://localhost:3005/api/v1/events', formData)
@@ -57,61 +57,37 @@ const AddEvent = () => {
   };
 
   return (
-    <div className={styles.addEventParent}>
-      <div className={styles.addEvent}>Add Event</div>
-      <div className={styles.eventName}>Event Name</div>
-      {/* <div className={styles.addSamples}>Add Samples</div> */}
-      <input
-        type="text"
-        className={styles.frameChild}
-        onChange={(e) => {
-          setEvent(e.target.value);
-        }}
-      />
-      <label htmlFor="image1" className={styles.frameItemLabel}>
-        Upload Image 1
-      </label>
-      <input
-        type="file"
-        id="image1"
-        className={styles.frameItem}
-        onChange={(e) => handleImageChange(e, 1)}
-      />
-      <label htmlFor="image2" className={styles.frameInnerLabel}>
-        Upload Image 2
-      </label>
-      <input
-        type="file"
-        id="image2"
-        className={styles.frameInner}
-        onChange={(e) => handleImageChange(e, 2)}
-      />
-      <label htmlFor="image3" className={styles.rectangleDivLabel}>
-        Upload Image 3
-      </label>
-      <input
-        type="file"
-        id="image3"
-        className={styles.rectangleDiv}
-        onChange={(e) => handleImageChange(e, 3)}
-      />
-      <label htmlFor="image4" className={styles.frameChild1Label}>
-        Upload Image 4
-      </label>
-      <input
-        type="file"
-        id="image4"
-        className={styles.frameChild1}
-        onChange={(e) => handleImageChange(e, 4)}
-      />
-  <div className={styles.buttonsContainer}>
-  <button className={styles.done} onClick={sendData}>
-    Done
-  </button>
-  <button className={styles.done}>
-    <Link to={`/login/profile/${email}`}>Back</Link>
-  </button>
-</div>
+    <div className={styles.addEventContainer}>
+      <h1 className={styles.title}>Add Event</h1>
+      <form onSubmit={sendData} className={styles.form}>
+        <div className={styles.formGroup}>
+          <label htmlFor="event" className={styles.label}>Event Name</label>
+          <input
+            type="text"
+            id="event"
+            className={styles.input}
+            value={event}
+            onChange={(e) => setEvent(e.target.value)}
+          />
+        </div>
+        {images.map((_, index) => (
+          <div className={styles.formGroup} key={index}>
+            <input
+              type="file"
+              id={`image${index}`}
+              className={styles.fileInput}
+              onChange={(e) => handleImageChange(e, index)}
+            />
+            <label htmlFor={`image${index}`} className={styles.fileInputLabel}>
+              {`Upload Image ${index + 1}`}
+            </label>
+          </div>
+        ))}
+        <div className={styles.buttonsContainer}>
+          <button type="submit" className={styles.button}>Done</button>
+          <Link to={`/login/profile/${email}`} className={styles.button}>Back</Link>
+        </div>
+      </form>
     </div>
   );
 };
